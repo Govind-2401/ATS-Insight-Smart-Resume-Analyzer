@@ -41,7 +41,6 @@ ATS-Insight/
 # Screenshots
 <img width="1919" height="846" alt="Screenshot 2026-05-12 165536" src="https://github.com/user-attachments/assets/eec8c0f8-8f5d-4c9a-a197-de29f88fc9a2" />
 <img width="1919" height="531" alt="Screenshot 2026-05-12 165609" src="https://github.com/user-attachments/assets/672ea2ef-4a68-462d-939e-4917c82e8faf" />
-<img width="463" height="476" alt="Screenshot 2026-05-12 165710" src="https://github.com/user-attachments/assets/d4c2b88a-0fff-4ab2-ad71-18404b1ed328" />
 
 # Clone Repository
 bash
