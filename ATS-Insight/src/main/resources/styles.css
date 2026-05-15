@@ -1,0 +1,562 @@
+/* =====================================================
+   MAIN BACKGROUND
+===================================================== */
+
+.root {
+
+    -fx-font-family: "Segoe UI";
+
+    -fx-background-color:
+            linear-gradient(
+                    to bottom right,
+                    #eef3f8,
+                    #dce7f5
+            );
+}
+
+/* =====================================================
+   MAIN LAYOUT
+===================================================== */
+
+.main-layout {
+
+    -fx-background-color: transparent;
+}
+
+/* =====================================================
+   HEADINGS
+===================================================== */
+
+.main-heading {
+
+    -fx-font-size: 28px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #1f2d3d;
+}
+
+.sub-heading {
+
+    -fx-font-size: 14px;
+
+    -fx-text-fill: #374b68;
+}
+
+/* =====================================================
+   LABELS
+===================================================== */
+
+.label {
+
+    -fx-font-size: 16px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #1f2937;
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.button {
+
+    -fx-font-size: 15px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #2375f6;
+
+    -fx-padding: 12 24;
+
+    -fx-background-radius: 14;
+
+    -fx-cursor: hand;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0,0,0,0.18),
+            10,
+            0.3,
+            0,
+            3
+    );
+}
+
+/* Upload Button */
+
+.button:first-of-type {
+
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #3b82f6,
+                    #2563eb
+            );
+}
+
+/* Analyze Button */
+
+.button:last-of-type {
+
+    -fx-background-color:
+            linear-gradient(
+                    to right,
+                    #22c55e,
+                    #16a34a
+            );
+}
+
+/* Hover */
+
+.button:hover {
+
+    -fx-scale-x: 1.03;
+
+    -fx-scale-y: 1.03;
+
+    -fx-opacity: 0.95;
+}
+
+/* =====================================================
+   TEXT AREA
+===================================================== */
+
+.text-area {
+
+    -fx-font-size: 14px;
+
+    -fx-background-radius: 18;
+
+    -fx-border-radius: 18;
+
+    -fx-border-color: #d5dbe7;
+
+    -fx-background-color: white;
+
+    -fx-padding: 12;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0,0,0,0.08),
+            8,
+            0.2,
+            0,
+            2
+    );
+}
+
+.text-area:focused {
+
+    -fx-border-color: #3b82f6;
+}
+
+/* =====================================================
+   COMBO BOX
+===================================================== */
+
+.combo-box {
+
+    -fx-font-size: 14px;
+
+    -fx-background-radius: 12;
+
+    -fx-border-radius: 12;
+
+    -fx-background-color: white;
+
+    -fx-border-color: #d5dbe7;
+
+    -fx-padding: 5;
+}
+
+.combo-box:hover {
+
+    -fx-border-color: #3b82f6;
+}
+
+/* =====================================================
+   SCROLL PANE
+===================================================== */
+
+.scroll-pane {
+
+    -fx-background-color: transparent;
+
+    -fx-background-radius: 14;
+
+    -fx-border-radius: 14;
+
+    -fx-border-color: #d5dbe7;
+}
+
+.scroll-pane .viewport {
+
+    -fx-background-color: white;
+}
+
+/* =====================================================
+   HIGHLIGHTED RESUME
+===================================================== */
+
+.text-flow {
+
+    -fx-background-color: white;
+
+    -fx-padding: 14;
+
+    -fx-background-radius: 14;
+
+    -fx-border-radius: 14;
+
+    -fx-border-color: #d5dbe7;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0,0,0,0.05),
+            6,
+            0.2,
+            0,
+            2
+    );
+}
+
+/* =====================================================
+   PROGRESS BAR
+===================================================== */
+
+.custom-progress {
+
+    -fx-pref-height: 22px;
+}
+
+.custom-progress > .track {
+
+    -fx-background-color: #d7dce5;
+
+    -fx-background-radius: 12;
+}
+
+.custom-progress > .bar {
+
+    -fx-background-radius: 12;
+}
+
+/* LOW */
+
+.custom-progress.low > .bar {
+
+    -fx-background-color: #ef4444;
+}
+
+/* MEDIUM */
+
+.custom-progress.medium > .bar {
+
+    -fx-background-color: #f59e0b;
+}
+
+/* HIGH */
+
+.custom-progress.high > .bar {
+
+    -fx-background-color: #22c55e;
+}
+
+/* =====================================================
+   SCORE LABEL
+===================================================== */
+
+.score-label {
+
+    -fx-font-size: 24px;
+
+    -fx-font-weight: bold;
+}
+
+/* =====================================================
+   SCORE CARD
+===================================================== */
+
+.score-card {
+
+    -fx-background-color: #eefcf2;
+
+    -fx-padding: 20;
+
+    -fx-background-radius: 18;
+
+    -fx-border-radius: 18;
+
+    -fx-border-color: #d8f0df;
+
+    -fx-min-width: 140;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0,0,0,0.08),
+            8,
+            0.2,
+            0,
+            2
+    );
+}
+
+/* =====================================================
+   MATCH LABEL
+===================================================== */
+
+.match-label {
+
+    -fx-font-size: 16px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #16a34a;
+}
+
+/* =====================================================
+   RESULT AREA
+===================================================== */
+
+#resultArea {
+
+    -fx-font-size: 14px;
+}
+
+/* =====================================================
+   SCROLL BAR
+===================================================== */
+
+.scroll-bar:vertical .thumb,
+.scroll-bar:horizontal .thumb {
+
+    -fx-background-color: #a7b3c5;
+
+    -fx-background-radius: 10;
+}
+
+/* =====================================================
+   ANALYSIS SECTION
+===================================================== */
+
+.analysis-section {
+
+    -fx-background-color: rgba(255,255,255,0.55);
+
+    -fx-padding: 14;
+
+    -fx-background-radius: 18;
+
+    -fx-border-radius: 18;
+
+    -fx-border-color: #c7d7ee;
+}
+
+/* =====================================================
+   ANALYSIS TITLE
+===================================================== */
+
+.analysis-title {
+
+    -fx-font-size: 22px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #1f2937;
+}
+
+/* =====================================================
+   TOP RESULT
+===================================================== */
+
+.result-top {
+
+    -fx-font-size: 15px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #2563eb;
+}
+
+/* =====================================================
+   ANALYSIS CARDS
+===================================================== */
+
+.analysis-card {
+
+    -fx-background-color: white;
+
+    -fx-padding: 18;
+
+    -fx-spacing: 10;
+
+    -fx-pref-width: 420;
+
+    -fx-min-width: 420;
+
+    -fx-background-radius: 18;
+
+    -fx-border-radius: 18;
+
+    -fx-border-color: #e2e8f0;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0,0,0,0.08),
+            10,
+            0.2,
+            0,
+            3
+    );
+}
+
+/* =====================================================
+   ANALYSIS CARD SCROLL
+===================================================== */
+
+.scroll-pane {
+
+    -fx-background-color: transparent;
+
+    -fx-fit-to-width: true;
+
+    -fx-background-radius: 18;
+
+    -fx-border-radius: 18;
+
+    -fx-border-color: #dbe4f0;
+}
+
+.scroll-pane .viewport {
+
+    -fx-background-color: transparent;
+}
+
+/* =====================================================
+   CARD TITLES
+===================================================== */
+
+.matched-title {
+
+    -fx-text-fill: #16a34a;
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+}
+
+.missing-title {
+
+    -fx-text-fill: #ef4444;
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+}
+
+.suggestion-title {
+
+    -fx-text-fill: #7c3aed;
+
+    -fx-font-size: 18px;
+
+    -fx-font-weight: bold;
+}
+
+/* =====================================================
+   SKILLS
+===================================================== */
+
+.matched-skill {
+
+    -fx-text-fill: #0e0e0e;
+
+    -fx-font-size: 14px;
+}
+
+.missing-skill {
+
+    -fx-text-fill: #050505;
+
+    -fx-font-size: 14px;
+}
+
+/* =====================================================
+   SUGGESTIONS
+===================================================== */
+
+.suggestion-item {
+
+    -fx-wrap-text: true;
+
+    -fx-font-size: 14px;
+
+    -fx-text-fill: #374151;
+
+    -fx-padding: 4 0 4 0;
+
+    -fx-line-spacing: 3;
+}
+
+/* =====================================================
+   MAIN SCROLL
+===================================================== */
+
+.main-scroll {
+
+    -fx-background: transparent;
+
+    -fx-background-color: transparent;
+}
+
+.main-scroll > .viewport {
+
+    -fx-background-color: transparent;
+}
+
+/* =====================================================
+   RESUME SIDE BY SIDE SECTION
+===================================================== */
+
+.section-label {
+
+    -fx-font-size: 17px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #1f2937;
+}
+
+/* =====================================================
+   RESUME INPUT AREA
+===================================================== */
+
+.text-area {
+
+    -fx-pref-height: 250;
+}
+
+/* =====================================================
+   HIGHLIGHTED RESUME AREA
+===================================================== */
+
+.scroll-pane {
+
+    -fx-pref-height: 250;
+}
+
+/* =====================================================
+   ANALYSIS GRID FULL WIDTH
+===================================================== */
+
+.analysis-section {
+
+    -fx-pref-width: Infinity;
+}
+
+.analysis-card {
+
+    -fx-pref-height: 320;
+}
